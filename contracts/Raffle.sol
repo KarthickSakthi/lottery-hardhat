@@ -1,3 +1,9 @@
+//Raffle
+//Enter the lottery (paying some amount)
+//Pick a random winner (verifyable random)
+//winner to be selected every x minutes -> complete automate
+//Chainlink Oracle - Randomness, Automated Execution (Chainlink keepers)
+
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.7;
