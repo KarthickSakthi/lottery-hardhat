@@ -1,4 +1,5 @@
-const { network, ethers } = require("hardhat");
+const { network } = require("hardhat");
+const { ethers } = require("ethers");
 const {
   networkConfig,
   developmentChains,
@@ -7,8 +8,8 @@ const { verify } = require("../utils/verify");
 
 const VRF_SUBSCRIPTION_FUND_AMOUNT = ethers.utils.parseEther("2");
 
-module.exports = async function ({ getNamedAccounts, deployements }) {
-  const { deploy, log } = deployements;
+module.exports = async function ({ getNamedAccounts, deployments }) {
+  const { deploy, log } = deployments;
   const { deployer } = await getNamedAccounts();
   const chainId = network.config.chainId;
   let vrfCoordinatorV2Address, subscriptionId;
